@@ -52,6 +52,20 @@ You own correctness. After a subagent returns:
 Report to the user what was delegated, to which model, and what you
 verified — not just "done."
 
+## Plan file location
+
+Do not save plan files under `~/.claude/plan` or any other global directory.
+Save each plan inside the working repo, at its root. This keeps the plan
+next to the code it describes.
+
+## Syncing settings to remote sessions
+
+To push the master Claude config (global `~/.claude` standards plus this
+file and `.claude/agents/`) out to a remote session on another machine,
+use the `claude-settings-sync` agent (`.claude/agents/claude-settings-sync.md`).
+It reads the current source files, flags anything Mac-specific, and
+relays the rest over `SendMessage`.
+
 ## Cross-session memory
 
 The `claude-mem` plugin records observations from every session in this

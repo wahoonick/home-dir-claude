@@ -7,6 +7,7 @@
 .claude/skills/synced/*
 .claude/skills/synced/.*
 !.claude/CLAUDE.md
+!.claude/STE.md
 !.claude/skills/
 !.claude/agents/
 Wahoo/*
