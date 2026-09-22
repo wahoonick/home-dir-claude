@@ -2,6 +2,20 @@
 
 
 
+
+.claude/*
+.claude/skills/synced/*
+.claude/skills/synced/.*
+!.claude/CLAUDE.md
+!.claude/skills/
+!.claude/agents/
+Wahoo/*
+!Wahoo/.claude/
+!Wahoo/CLAUDE.md
+!Wahoo/agents/
+!Wahoo/skills/
+
+
 *.jpg
 *.c
 *.h
@@ -11,7 +25,11 @@
 *.pklg
 *.elf
 
+
 .bash_history
+.ssh/
+.nvm/
+.docker/
 
 .Trash/
 .android/
@@ -20,9 +38,11 @@
 .cups/
 .local/
 .upp/
-
+.claude.*
 Public/
 .cocoapods/
+.bun/
+.bash*
 .ecplipse/
 .lldb/
 .nxp/
@@ -32,6 +52,7 @@ Applications/
 Desktop/
 Documents/
 Downloads/
+esp/
 Music/
 Library/
 Movies/
@@ -40,16 +61,36 @@ Parallels/
 Pictures/
 Sites/
 Qt/
-Wahoo/
+
 mcuxpresso/
+Calibre*/
+data.txt
 
 .CFUserTextEncoding
 .git-prompt_old.sh
 .gitflow_export
-.wfCreatePullRequests.myslackname.txt
-.eclipse/org.eclipse.oomph.p2/agents.info
-.oracle_jre_usage/4bb82287.timestamp
-.p2/pools.info
-.p2/profiles.info
-.redhat/anonymousId
-.TotalPhase/DataCenter/preferences.ini
+.copilot/
+.esp-idf-sbom/
+.espressif/
+.github/
+.claude-mem/
+.lesshst
+.matplotlib/
+.netrc
+.npm/
+.nrfconnect-apps/
+.nrfutil/
+.platformio/
+.pyenv/
+.viminfo
+.vscode-shared/
+.wahoofitness.json
+Applications (Parallels)/
+Book1.xlsx
+git-gone
+go/
+ncaine6@gmail.com - Google Drive
+nick.caine@wahoofitness.com - Google Drive
+pio312/
+recover/
+vcpkg/

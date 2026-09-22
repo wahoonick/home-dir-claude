@@ -1,0 +1,45 @@
+[core]
+	excludesfile = /Users/nickcaine/.gitignore_global
+	editor = code --wait
+	mergeoptions = --no-edit
+	autocrlf = input
+[user]
+	name = Nick Caine
+	email = 92962155+wahoonick@users.noreply.github.com
+[commit]
+	template = /Users/nick/.stCommitMsg
+[code]
+    editor = code --wait
+# Comment: Start of "Extra Block"
+# Comment: This is to unlock VSCode as your git diff and git merge tool    
+[merge]
+    tool = vscode
+[mergetool "vscode"]
+    cmd = code --wait $MERGED
+# Comment: End of "Extra Block"
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Users/nickcaine/Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[diff]
+	tool = vimdiff
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[pull]
+	rebase = true
+	merge = true
+[init]
+	defaultBranch = develop
+#[safe]
+#	bareRepository = explicit
+[credential]
+	helper = osxkeychain
+	helper = 
+	helper = /usr/local/share/gcm-core/git-credential-manager
+[credential "https://dev.azure.com"]
+	useHttpPath = true
