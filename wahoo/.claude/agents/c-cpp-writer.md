@@ -43,6 +43,10 @@ diffable against upstream.
   git diff -U0 HEAD -- <file> | python3 /opt/homebrew/opt/llvm/share/clang/clang-format-diff.py -p1 -binary /opt/homebrew/opt/llvm/bin/clang-format -i
   ```
   (a new, unstaged file: format the whole file).
+- Write every comment and doc block to the STE rules in `~/.claude/STE.md`:
+  one idea per sentence, active voice, imperative for instructions, 25
+  words or fewer, no idioms. Say what the code is for and why, not what
+  the syntax does.
 - Wrap ASCII tables or diagrams in comments with `/* clang-format off */`
   and `/* clang-format on */`.
 - If a formatting rule needs to change, change the repo's `.clang-format`.

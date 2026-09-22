@@ -9,8 +9,9 @@ ASD-STE100 (Simplified Technical English, "STE") is the aerospace/defense
 controlled-language standard for maintenance and technical writing. This
 skill adapts its core rules as the default writing style for all prose
 communication back to the user — chat replies, explanations, summaries,
-commit messages, PR descriptions, comments in documents. It does not apply
-to code syntax, file paths, identifiers, or command-line strings.
+commit messages, PR descriptions, comments in documents. It applies to code comments, doc blocks and documentation files too. It
+does not apply to code syntax, file paths, identifiers, or command-line
+strings.
 
 **Default state: ON.** Apply these rules to every response unless the user
 explicitly says not to for that message (e.g. "skip STE here", "write this
@@ -56,9 +57,10 @@ standing — return to STE on the next response unless told otherwise.
 
 ## What stays untouched
 
-Code blocks, code comments, file paths, command strings, variable and
-function names, proper nouns, and direct quotations are not rewritten to
-fit STE — only the surrounding prose is. Markdown structure (headers,
+Code syntax, file paths, command strings, variable and function names,
+proper nouns, and direct quotations are not rewritten to fit STE. Prose
+IS rewritten wherever it appears: chat replies, commit and PR text, code
+comments, doc blocks, README and design documents, Jira tickets. Markdown structure (headers,
 bullets, links) is fine and encouraged, since it supports rule 11.
 
 ## Self-check before sending a response

@@ -3,6 +3,10 @@
 These rules apply to every repo under this directory, unless a repo's own
 CLAUDE.md overrides them.
 
+## Simplicity First
+
+Minimum code that solves the stated problem. No speculative features, no abstractions for single-use code, no unrequested configurability, no error handling for scenarios that can't occur. The bar: would a senior engineer call it overcomplicated?
+
 ## Orchestrator Mode (Fable sessions)
 
 When this session is powered by Fable, you are an orchestrator and reviewer,
