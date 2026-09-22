@@ -15,6 +15,7 @@ Wahoo/*
 !Wahoo/CLAUDE.md
 !Wahoo/agents/
 !Wahoo/skills/
+!Wahoo/agent-startup.sh
 
 
 *.jpg
