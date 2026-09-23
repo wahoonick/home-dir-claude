@@ -40,6 +40,28 @@ files and notes. That is the whole of your write access in practice.
    both build in one tree you will race.
 4. If no session matches, say so and continue without it. Do not wait.
 
+### The Windows VM that accompanies a Mac agent
+
+A Mac bench can run a Windows VM in Parallels. The Nordic tools live on
+the Windows side. The ESP32 tools live on the Mac side. One trainer can be
+plugged into both at once, so one hardware change may need both agents.
+
+Find the VM name from the Mac side, without a session:
+
+```bash
+prlctl list -o name,status      # every VM and its state
+prlctl exec "Windows 11" hostname   # machine name of the running VM
+```
+
+The machine name is the hostname part of the Windows agent's session
+name, for example `nrf-developer-NICKCAINE4F4B`. If `ListAgents` shows no
+Windows session for that name, the agent is not running. Tell Nick which
+VM and machine name you expect. Do not start the agent yourself.
+
+When the Mac and Windows agents share one bench, name the shared hardware
+in both task specs. Say which agent touches it first. Do not let both
+flash, power-cycle or hold a serial port at the same time.
+
 ## Verify the spec against the code before you delegate
 
 A wrong task spec costs a bench run. Read the code paths your instructions
