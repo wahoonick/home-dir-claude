@@ -17,9 +17,10 @@ AGENTS=(
 
 launch() {
   local agent="$1" dir="$2"
-  local cmd="cd '$dir' && claude --agent '$agent' -n '$agent' --model fable"
+  local name="$agent-$(hostname -s)"
+  local cmd="cd '$dir' && claude --agent '$agent' -n '$name' --model fable"
   osascript -e "tell application \"Terminal\" to do script \"$cmd\"" >/dev/null
-  echo "launched $agent in $dir"
+  echo "launched $name in $dir"
 }
 
 for entry in "${AGENTS[@]}"; do
