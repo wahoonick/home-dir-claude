@@ -17,7 +17,7 @@ AGENTS=(
 
 launch() {
   local agent="$1" dir="$2"
-  local cmd="cd '$dir' && claude --agent '$agent' -n '$agent'"
+  local cmd="cd '$dir' && claude --agent '$agent' -n '$agent' --model fable"
   osascript -e "tell application \"Terminal\" to do script \"$cmd\"" >/dev/null
   echo "launched $agent in $dir"
 }
