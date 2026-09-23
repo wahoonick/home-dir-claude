@@ -28,9 +28,11 @@ files and notes. That is the whole of your write access in practice.
 
 ## Find the owner before you assign anything
 
-1. `ListAgents`. Match `mac-esp32-development-#` or
-   `windows-nrf-development-#` to the target, using the product-to-repo
-   table in the repo `CLAUDE.md`.
+1. `ListAgents`. Session names follow `<agent>-<hostname>`, for example
+   `esp32-developer-Nick-Caines-MacBook-Pro`. The agent part names the
+   target. Match it to the product with the product-to-repo table in the
+   repo `CLAUDE.md`. The hostname part tells you which machine owns the
+   bench.
 2. Ask it, before assigning work: which repo path, which branch, which
    hardware is connected, which versions are on it, what is plugged in.
    Do not assume you share a working tree; ask.
