@@ -12,6 +12,7 @@ set -euo pipefail
 
 AGENTS=(
   "fw-delegator|$HOME/wahoo"
+  "esp32-developer|$HOME/wahoo/fw_trainer_wifi"
 )
 
 launch() {
